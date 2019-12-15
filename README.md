@@ -6,9 +6,7 @@ As I continue to learn more, I wish to come back to this project and fix any mis
 
 Langauges utilized in this project: R;
 Machine Learning algorithms: K-nearest neighbors, Linear Discriminant Analysis, Random Forest, Support Vector Machines. 
-Attempted Logistic regression but came across "complete separation" issue - explained in my video!
-
-Video presentation: 
+Attempted Logistic regression but came across "complete separation" in my data, so I decided not to use the model for this project.
 
 
 Credits:
