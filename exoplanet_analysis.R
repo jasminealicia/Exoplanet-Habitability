@@ -13,7 +13,6 @@ library(leaps)
 library(corrplot)
 library(ggplot2)
 library(glmnet)
-library(logistf)
 
 ##############################################
 # Loading data and cleaning up a tad bit
@@ -74,12 +73,6 @@ which(my_sum$bic == min(my_sum$bic)) #5 variables
 summary(regfit.full)$outmat[12,]
 summary(regfit.full)$outmat[5,]
 
-#Forward Stepwise Selection
-#regfit.fwd <- regsubsets(Y_habitable~., data = exo_data, method = "forward")
-#fwd.sum <- summary(regfit.fwd)
-#which(fwd.sum$rss == min(fwd.sum$rss))
-#summary(regfit.fwd)$outmat[8,]
-
 
 #Excluding the variables not needed
 
@@ -90,7 +83,6 @@ vars_12 <- names(exo_data) %in% c("koi_impact", "koi_ror", "koi_prad", "koi_teq"
 #new exo data set with 12 variables
 new.exo_data <- exo_data[-vars_12] 
 
-#or new.exo_data <- exo_data[vars_5] for 5 predictot model
 
 
 ##############################################
@@ -110,19 +102,7 @@ exo.test <- new.exo_data[-train,]
 
 #Fitting the logistic regression model
 log.model <- glm(Y_habitable ~ ., data = exo.train, family="binomial")
-summary(log.model)
 
-
-#Prediction accuracy
-prob <- log.model %>% predict(exo.test, type="response")
-predicted.class <- ifelse(prob>0.5, 1, 0)
-mean(predicted.class == exo.test$Y_habitable) #0.9526
-
-#Confusion matrix on training data
-pred <- predict(log.model, type = "response")
-pred.glm <- rep("Non-habitable", length(pred))
-pred.glm[pred > 0.5] <- "Habitable"
-table(pred.glm, exo.train$Y_habitable)
 
 
 
