@@ -24,7 +24,7 @@ exo_data <- exo_data[, -c(1:4)] #don't need columns 1-4 (they're just ID's and n
 
 #############################################
 # Some exploratory data analysis
-# on original and subsetted data
+# on exo_data
 #############################################
 
 dim(exo_data)
