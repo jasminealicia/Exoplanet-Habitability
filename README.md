@@ -1,6 +1,6 @@
 # Exoplanet-Habitability
 Binary classification project for Bay Path University's ADS 635 Data Mining I class. 
-The goal was to build models that would accurately predict whether an exoplanet was habitable or not. 
+The goals were to create a data set for my machine learning methods using the NASA Exoplanet Archive data and to build models that would accurately predict whether an exoplanet was habitable or not. 
 As I continue to learn more, I wish to come back to this project and fix any mistakes I'd missed and optimize the code.
 
 
