@@ -56,7 +56,7 @@ habitable_candidate_subset <- data2[which(data2$kepoi_name %in% candidate_habit)
 ################################################
 # Taking random sample of full "CONFIRMED "data set 
 # to be used in the analysis.
-# These will planets will be the non-habitable ones
+# These planets will be the non-habitable ones
 ################################################
 set.seed(12345)
 sub <- sample(1:nrow(new.data), 0.20*nrow(new.data))
