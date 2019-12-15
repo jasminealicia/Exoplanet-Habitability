@@ -3,4 +3,6 @@ Binary classification project for Bay Path University's ADS 635 Data Mining I cl
 
 
 Langauges utilized in this project: R
-Machine Learning algorithms: K-nearest neighbors, Linear Discriminant Analysis, Random Forest, Support Vector Machines. Attempted Logistic regression but came across "complete separation" issue - explained in the PDF!
+Machine Learning algorithms: K-nearest neighbors, Linear Discriminant Analysis, Random Forest, Support Vector Machines. Attempted Logistic regression but came across "complete separation" issue - explained in my video!
+
+Video presentation: 
