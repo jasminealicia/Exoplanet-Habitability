@@ -1,5 +1,5 @@
 ###################################################
-# This code subsets the CSV files downloaded from 
+# This code takes the CSV files downloaded from 
 # https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=q1_q17_dr24_koi
 # and subsets it, merges, and creates new data set for 
 # analysis.
