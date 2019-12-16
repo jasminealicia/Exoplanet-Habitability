@@ -47,9 +47,6 @@ ggplot(exo_data, aes(x=Y_habitable, fill=factor(Y_habitable))) +
   geom_bar(stat = "count", position="dodge") + scale_x_continuous(breaks = seq(0,1,1)) +
   ggtitle("Distribution of Habitable/Non-Habitable Exoplanets") +
   theme_classic()
-
-quartz()
-boxplot(exo_data$koi_teq)
                                                                              
 ##############################################
 # Subset Selection - A bust!
@@ -86,7 +83,7 @@ new.exo_data <- exo_data[-vars_12]
 
 
 ##############################################
-# Logistic Regression - A bust!! - Explained in video presentation
+# Logistic Regression - A bust!! Due to complete separation.
 ##############################################
 
 #Create training and test set
@@ -96,7 +93,7 @@ exo.train <- new.exo_data[train,]
 exo.test <- new.exo_data[-train,]
 
 
-#Firth Logistic Regression for 12 variable model
+#Firth Logistic Regression for 12 variable model - could use this.
 #firth <- logistf(Y_habitable ~ ., data=exo.train)
 #summary(firth)
 
