@@ -4,6 +4,11 @@ The goals were to create a data set for my machine learning methods using the NA
 As I continue to learn more, I wish to come back to this project and fix any mistakes I'd missed and optimize the code.
 
 
+It is good for myself to note that because there is a severe class imbalance in the data set (44 habitable planets vs. 451 unhabitable), some of these models may not be predicting correctly due to its sensitivity to the imbalance. The Random Forest model does the best in this project (97.9% accuracy), and this is most likely due to the resampling nature the algorithm. I just wanted to add all of the models here for the sake of the project and learning.
+
+I also want to note that there some strong correlations between the variables, which may cause redundancy. I chose to retain all of the predictors for this project, but some of these variables can indeed be removed. 
+
+
 Langauges utilized in this project: R;
 Machine Learning algorithms: K-nearest neighbors, Linear Discriminant Analysis, Random Forest, Support Vector Machines. 
 Attempted Logistic regression but came across "complete separation" in my data, so I decided not to use the model for this project.
